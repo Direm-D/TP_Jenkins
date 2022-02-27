@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'bat \'gradle build\''
+        echo 'heloooo'
       }
     }
 
