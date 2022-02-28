@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        bat 'git --version'
+        bat 'gradle clean'
         bat 'gradle build'
-        sh 'bat \'git --version\''
       }
     }
 
