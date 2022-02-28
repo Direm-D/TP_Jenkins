@@ -40,7 +40,7 @@ pipeline {
               bat(script: 'gradle sonarqube', returnStatus: true)
             }
 
-            waitForQualityGate abortPipeline: true
+            waitForQualityGate true
           }
         }
 
